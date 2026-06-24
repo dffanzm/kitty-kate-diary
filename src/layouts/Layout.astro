@@ -1,0 +1,19 @@
+---
+import '../styles/global.css';
+const { title } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title || "Kitty Kate's Care Hub 🐾"}</title>
+  </head>
+  <body class="bg-indigo-50 text-slate-800 font-sans min-h-screen flex flex-col">
+    <main class="flex-grow max-w-4xl w-full mx-auto p-4 md:p-8">
+      <slot />
+    </main>
+  </body>
+</html>

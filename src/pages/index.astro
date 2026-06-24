@@ -1,26 +1,22 @@
 ---
-import '../styles/global.css';
-// Component Imports
-import Button from '../components/Button.astro';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+import Layout from '../layouts/Layout.astro';
+// We'll import ScheduleCRUD here later
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
+<Layout title="Kitty Kate's Care Hub 🐾">
+  <div class="text-center py-10">
+    <h1 class="text-5xl font-extrabold text-indigo-600 tracking-tight drop-shadow-sm mb-4">
+      Kitty Kate's Care Hub 🐾
+    </h1>
+    <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+      The ultimate dashboard to manage feeding times, portions, and special care notes for Kitty Kate. Built with love!
+    </p>
+  </div>
 
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
-	</body>
-</html>
+  <div class="mt-8">
+    <!-- Placeholder for Schedule component -->
+    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center text-slate-500 italic">
+      <p>Schedule Component will be loaded here...</p>
+    </div>
+  </div>
+</Layout>
