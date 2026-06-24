@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Footer from '../components/Footer.astro';
-// We'll import ScheduleCRUD here later
+import ScheduleCRUD from '../components/ScheduleCRUD.jsx';
 ---
 
 <Layout title="Kitty Kate's Care Hub 🐾">
@@ -15,10 +14,7 @@ import Footer from '../components/Footer.astro';
   </div>
 
   <div class="mt-8">
-    <!-- Placeholder for Schedule component -->
-    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center text-slate-500 italic">
-      <p>Schedule Component will be loaded here...</p>
-    </div>
+    <ScheduleCRUD client:load />
   </div>
 
   <Footer />
